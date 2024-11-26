@@ -30,12 +30,9 @@ class CSVReader(metaclass=SingletonMeta):
             print(f"Error parsing CSV: {e}")
         except Exception as e:
             print(f"Error not controlled: {e}")
-
-
-csv = CSVReader("./src/lib/datos_.csv")
+            
 
 if __name__ == "__main__":
-
     csv = CSVReader("./src/lib/datos_.csv")
     print(csv.headers)
     print(csv.data)

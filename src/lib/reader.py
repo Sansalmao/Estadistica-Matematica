@@ -13,7 +13,6 @@ class SingletonMeta(type):
 
 
 class CSVReader(metaclass=SingletonMeta):
-    _instance = None
     data = list()
     headers = list()
     file = ""
